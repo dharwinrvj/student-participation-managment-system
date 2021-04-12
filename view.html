@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir='ltr'>
+<head>
+<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="js/bootstrap.js">
+	<link rel="stylesheet" type="text/css" href="css/styles2.css">
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+	
+table,th,td{
+	border: 1px ;
+	width: 700px;
+	text-align: center;
+	padding: 5px;
+	font-family: sans-serif;
+	background: linear-gradient(to right,Antiquewhite,grey);
+	border-radius: 8px;
+	transition: all .5s ease-in-out;
+	color: Black;
+	font-weight: bold;
+	margin-right: auto;
+	margin-right: auto;
+}
+
+	
+
+
+</style>
+<body style="color: AntiqueWhite; font-family: Italic" bgcolor="Black">
+	<form method="post" action="viewphp.php" enctype="multipart/form-data">
+	 <h2 style="font-family: Italic; color:AntiqueWhite;"><center>VIEW STUDENTS DETAILS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center></h2>
+	 <div class="main">
+    	<div class="register">
+    		<form action="view.php" method="POST">
+    			<label>Enter Roll Number</label>
+    			<input type="text" name="Roll_Number" id="name" placeholder="Enter Roll Number">
+    			<br><br>
+    			
+    			<button type="submit" name="submit" value="submit" class="button-hover">
+    				<span>submit</span>
+    			</button>
+				
+				<button type="button" class="button-hover"  name="button" onclick="document.location='index.html'"><span>Go Back</span></button>
+                
+				
+    		</form></form>
+    		
+
+</body>
+
+</html>

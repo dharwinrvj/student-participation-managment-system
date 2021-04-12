@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="js/bootstrap.js">
+	<link rel="stylesheet" type="text/css" href="css/styles2.css">
+  <title>Internship</title>
+  <style type="text/css">  
+        .tooltip  
+        {  
+            display: inline;  
+            position: relative;  
+            text-decoration: none;  
+            top: 0px;  
+            left: 4px;  
+			font-family: 'italic',sans-serif;
+        }  
+        .tooltip:hover:after  
+        {  
+            background: #333;  
+            background:  rgba(0,0,0,.8);  
+            border-radius: 5px;  
+            top: -5px;  
+            color: #fff;  
+            content: attr(alt);  
+            left: 350px;  
+            padding: 40px 15px;  
+            position: absolute;  
+            z-index: 10;  
+            width: 500px;  
+        }  
+        .tooltip:hover:before  
+        {  
+            border: solid;  
+            border-color: BLACK;  
+            border-width: 6px 6px 6px 0;  
+            bottom: 200px;  
+            content: "";  
+            left: 350px;  
+            position: absolute;  
+            z-index: 99;  
+            top: 11px;  
+        }  
+    </style>  
+
+
+</head>
+<body style="color: AntiqueWhite; font-family: Italic" bgcolor="Black">
+<form method="post" action="connecthtml3.php" enctype="multipart/form-data">
+    <div class="main">
+    	<div class="register">
+    		<h2 style="font-family: 'italic',sans-serif;" ><center>Internship / Inplant</center></h2>
+    		<form id="register" method="post">
+    			<span alt="Name in captial letter with initial"style="color:white" class="tooltip"><label>Name</label>
+    			<input type="text" name="Name" id="name" placeholder="Enter your name" required>
+    			<br><br></span>
+    			<span alt="Roll number in full form"style="color:white" class="tooltip"><label>Roll Number</label>
+    			<input type="text" name="Roll_Number" id="name" placeholder="Enter your roll number" required>
+    			<br><br></span>
+    			<span alt="Select your depatment"style="color:white" class="tooltip"><label>Department</label>
+    			&nbsp;&nbsp;&nbsp;&nbsp;
+    			<select id="name" name="department" required>
+				    <option >Select</option>
+    				<option >CSE</option>
+    				<option >ECE</option>
+    				<option >EEE</option>
+    				<option >IT</option>
+    				<option >CE</option>
+    				<option >MECH</option>
+    			</select>
+    			<br><br></span>
+    			<span alt="If you don't have section then select NIL "style="color:white" class="tooltip"><label>Section</label>
+
+    			&nbsp;&nbsp;&nbsp;&nbsp;
+    			<input type="radio" value='A' name="section" id="n">
+    			&nbsp;
+    			<span id="n" style=" width:300px;border:1px solid #ddd;border-radius: 3px;outline:0;padding: 7px;box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);;">A</span>
+    			&nbsp;&nbsp;&nbsp;&nbsp;
+    			<input type="radio" value='B' name="section" id="n">
+    			&nbsp;
+    			<span id="n" style=" width:300px;border:1px solid #ddd;border-radius: 3px;outline:0;padding: 7px;box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);;">B</span>
+    			&nbsp;&nbsp;&nbsp;&nbsp;
+    			<input type="radio" value='NIL' name="section" id="n">
+    			&nbsp;
+    			<span id="n" style=" width:300px;border:1px solid #ddd;border-radius: 3px;outline:0;padding: 7px;box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);;">NIL</span>
+				<br><br></span>
+    			<span alt="Select your batch from and to year"style="color:white" class="tooltip"><label>Batch</label>
+    			&nbsp;&nbsp;&nbsp;&nbsp;
+    			<select id="name" name="batch" required>
+				    <option >Select</option>
+    				<option >2017-2021</option>
+    				<option >2018--2022</option>
+    				<option >2019-2023</option>
+    				<option >2020-2024</option>
+    				<option >2021-2025</option>
+    				<option >2022-2026</option>
+    			</select>
+    			<br><br></span>
+    			<span alt="Your latest email address"style="color:white" class="tooltip"><label>E-Mail</label>
+    			<input type="text" name="email" id="name" placeholder="Enter email address" required>
+    			<br><br></span>
+    			<span alt="Event name in full form"style="color:white" class="tooltip"><label>Name of the Internship/Inplant</label>
+    			<input type="text" name="paper" id="name" placeholder="Enter topic name" required>
+    			<br><br></span>
+    			<span alt="College full name that you have attended the event in full form"style="color:white" class="tooltip"><label>Name of the Company</label>
+    			<input type="text" name="college" id="name" placeholder="Enter company name" required>
+    			<br><br></span>
+    			<span alt="Event start date"style="color:white" class="tooltip"><lable style="font-family:sans-serif;font-size:18px;font-style:italic">Date of Event From</lable>
+    			<input type="Date" name="from" id="name">
+    			<br><br></span>
+    			<span alt="Event finish date"style="color:white" class="tooltip"><lable style="font-family:sans-serif;font-size:18px;font-style:italic">Date of Event To</lable>
+    			<input type="Date" name="to" id="name">
+    			<br><br></span>
+    			<span alt="Prize details in words( Eg:Won 2nd palce and certificate )"style="color:white" class="tooltip"><label >Prizes if any</label>
+    			<input type="text" name="prize" id="name" placeholder="Enter prize details" required>
+    			<br><br></span>
+    			<span alt="Upload the certificate that you won as pdf file"style="color:white" class="tooltip"><label>Certificate</label>
+    			<input type="file" name="certificate" id="certificate" accept="application/pdf" required>
+    			<br><br></span>
+                <button class="button-hover">
+			        <span>Submit</span>
+		        </button>
+                <button  onclick="goBack()" class="button-hover" >
+				<span>Go Back</span></button>
+                <script>
+                function goBack() 
+                 {
+                   window.history.back();
+                 }
+                </script>
+				
+				
+
+  
+
+
+
+    		</form></form>
+    	</div>
+    </div>
+</body>
+</html>

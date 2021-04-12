@@ -1,0 +1,114 @@
+/* First page */
+
+.first-page{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  text-align: left;
+	display: flex;
+  align-items:center;
+  justify-content:center;
+  overflow: hidden;
+	background-image: url(../image/Untitled.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:cover;
+	font-family: 'Raleway', sans-serif;
+}
+h1{
+  font-size: 2.5rem;
+  padding: 20px;
+  margin: 15px;
+  z-index: 1;
+	color: #fff;
+  letter-spacing: 0.02em;
+}
+.first-page button{
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 20px;
+  margin: 15px;
+  z-index: 1;
+}
+
+
+
+ /* Upload page */
+.upload-page{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #0d0f1b;
+  overflow: hidden;
+	font-family: 'Poppins',sans-serif;
+
+}
+ul{
+  position:relative;
+  display:flex;
+  flex-direction: column;
+}
+ul li{
+  list-style: none;
+}
+ul li:before{
+  content: attr(data-text);
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 6em;
+  font-weight: 700;
+  pointer-events: none;
+  opacity: 0;
+  letter-spacing: 20px;
+  transition: 0.5s;
+  white-space: nowrap;
+
+}
+ul li:hover:before{
+  opacity: 0.05;
+  letter-spacing: 0;
+}
+ul li a{
+  position: relative;
+  display: inline-block;
+  padding: 6px 15px;
+  text-decoration: none;
+  background: #2196f3;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  overflow:hidden;
+  transition: 0.5s;
+  z-index: 1;
+
+}
+ul:hover li a{
+  opacity: 0;
+}
+ul li a:hover{
+     transform: scale(1.4);
+     z-index: 1000;
+     background: #ff3f81;
+     opacity: 1;
+}
+ul li a:before{
+   content: '';
+   position: absolute;
+   top: 0;
+   left:-100px;
+   width: 80px;
+   height: 100%;
+   background: linear-gradient(90deg,transparent,rgba(255,255, 255, 0.8),transparent);
+   transform: skewX(35deg);
+   transition: 0s;
+}
+ul li a:hover:before{
+  left: calc(100% + 100px);
+  transition: 0.5s;
+  transition-delay: 0.2s;
+
+}
